@@ -1,0 +1,22 @@
+package com.example.SecretarioVirtual_Demo.entities;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
+@Table(name = "clientes")
+public class Client {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String id;
+
+    @OneToOne
+    @JoinColumn(name = "usuario_id")
+    private User usuario;
+}
