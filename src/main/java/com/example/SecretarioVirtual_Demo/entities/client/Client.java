@@ -1,6 +1,6 @@
-package com.example.SecretarioVirtual_Demo.entities;
+package com.example.SecretarioVirtual_Demo.entities.client;
 
-
+import com.example.SecretarioVirtual_Demo.entities.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,8 +12,8 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name = "clientes")
+public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -32,10 +32,4 @@ public class User {
     private LocalDate dateOfBirth;
 
     private String password;
-
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-    private Client client;
-
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-    private Professional professional;
 }
