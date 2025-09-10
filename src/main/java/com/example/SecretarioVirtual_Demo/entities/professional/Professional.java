@@ -2,15 +2,15 @@ package com.example.SecretarioVirtual_Demo.entities.professional;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
+
 @Entity
+@Builder
 @Table(name = "profesionales")
 public class Professional {
 

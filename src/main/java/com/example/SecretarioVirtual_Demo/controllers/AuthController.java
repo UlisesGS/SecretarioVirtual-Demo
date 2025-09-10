@@ -1,13 +1,16 @@
 package com.example.SecretarioVirtual_Demo.controllers;
 
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
-@RequestMapping("/api/autenticacion")
+@RequestMapping("/api/auth")
 @CrossOrigin(origins = "http://localhost:5173")
 @RestController
 public class AuthController {
+
 }

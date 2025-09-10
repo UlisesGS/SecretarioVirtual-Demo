@@ -3,7 +3,7 @@ package com.example.SecretarioVirtual_Demo.services.user;
 import com.example.SecretarioVirtual_Demo.entities.professional.Professional;
 import com.example.SecretarioVirtual_Demo.entities.professional.dto.RequestCreateProfessionalDto;
 import com.example.SecretarioVirtual_Demo.entities.professional.dto.ResponseCreateProfessionalDto;
-import com.example.SecretarioVirtual_Demo.mappers.ProfessionalMapper;
+import com.example.SecretarioVirtual_Demo.mappers.professional.ProfessionalMapper;
 import com.example.SecretarioVirtual_Demo.repositories.ProfessionalRepository;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
